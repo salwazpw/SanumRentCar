@@ -21,4 +21,5 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'home'])->name('home');
+Route::get('/mobil', [App\Http\Controllers\MobilController::class, 'index']);
 Route::get('/contact', [App\Http\Controllers\HomeController::class, 'contact'])->name('contact');
