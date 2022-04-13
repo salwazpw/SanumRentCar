@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 class FormRentController extends Controller
 {
     public function create(){
-        return view ('form.create');
+        return view ('web.create', ['title'=>'Sanum - Form Rent']);
     }
     public function store()
     {

@@ -9,12 +9,12 @@
         </div>
     </div>
 </div>
-
+<script>var pesan = () => alert("Anda telah berhasil memesan tiket! Tiket akan dikirimkan ke E-mail anda setelah pembayaran terverifikasi!");
+</script>
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">Form rent</div>
  
                 <div class="card-body">
                     <form method="POST" action="/form">
@@ -23,33 +23,33 @@
                         <div class="form-group">
                             <label>NIK</label>
                             <input type="text" class="form-control" name="NIK" value="{{ old('NIK') }}">
-                        </div>
+                        </div><br>
                         <div class="form-group">
                             <label>Nama</label>
                             <input type="nama" class="form-control" name="nama" value="{{ old('nama') }}">
-                        </div>
+                        </div><br>
                         <div class="form-group">
                             <label>Email Address</label>
                             <input type="email" class="form-control" name="email" value="{{ old('email') }}">
-                        </div>
+                        </div><br>
                         <div class="form-group">
                             <label>Jenis Mobil</label>
                             <input type="jenisMobil" class="form-control" name="jenisMobil" value="{{ old('jenisMobil') }}">
-                        </div>
+                        </div><br>
                         <div class="form-group">
                             <label>Alamat</label>
                             <input type="alamat" class="form-control" name="alamat" value="{{ old('alamat') }}">
-                        </div>
+                        </div><br>
                         <label class="mt-checkbox">
                             <input type="radio" id="sopir" name="sopir" value="Ya"> Dengan Sopir
-                        </label>
+                        </label><br>
                         <br>
                         <label class="mt-checkbox">
                             <input type="radio" id="jasa" name="jasa" value="Ya"> Jasa Pengantaran Mobil
-                        </label>
-                        </br>
+                        </label><br>
+                        <br>
                         <div class="form-group">
-                            <button class="btn btn-primary">Submit</button>
+                            <button class="btn btn-primary" href="#" onclick="pesan()">Submit</button>
                         </div>
                         
 
