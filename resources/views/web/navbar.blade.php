@@ -11,7 +11,7 @@
           <li><a class="nav-link scrollto active" href="/home">Home</a></li>
           <li><a class="nav-link scrollto active" href="/mobil">Mobil</a></li>
           <li><a class="nav-link scrollto active" href="/form/create">Form Rent</a></li>
-          <li><a class="nav-link scrollto active" href="/contact">Contact</a></li>
+          <li><a class="nav-link scrollto active" href="/contact/create">Contact</a></li>
           <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     <font color="F8BA36">{{ Auth::user()->name }}</font>
