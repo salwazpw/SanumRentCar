@@ -12,16 +12,16 @@
 <script>var pesan = () => alert("Anda telah berhasil memesan tiket! Tiket akan dikirimkan ke E-mail anda setelah pembayaran terverifikasi!");
 </script>
 <div class="container">
-    <div class="row justify-content-center">
+    <div class="row justify-content-center" >
         <div class="col-md-8">
             <div class="card">
  
-                <div class="card-body">
+                <div class="card-body" style="background-color:rgb(169, 169, 169);">
                     <form method="POST" action="/form">
                         @csrf
  
                         <div class="form-group">
-                            <label>NIK</label>
+                            <label><b>NIK<b></label>
                             <input type="text" class="form-control" name="NIK" value="{{ old('NIK') }}">
                         </div><br>
                         <div class="form-group">
@@ -49,11 +49,12 @@
                         </label><br>
                         <br>
                         <div class="form-group">
-                            <button class="btn btn-primary" href="#" onclick="pesan()">Submit</button>
+                            <button class="btn btn-success" href="#" onclick="pesan()">Submit</button>
                         </div>
-                        
-
                     </form>
+                    <br><br>
+                        <a href="/pembayaran" button class="btn btn-primary" >Metode Pembayaran</a>
+                        <br><br>
                 </div>
             </div>
         </div>

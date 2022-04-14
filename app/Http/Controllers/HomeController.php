@@ -44,5 +44,8 @@ class HomeController extends Controller
         return view('web.form', ['title'=>'Sanum - Form Rent']);
     }
  
-    
+    public function bayar()
+    {
+        return view('web.bayar', ['title'=>'Sanum - Metode Pembayaran']);
+    }
 }

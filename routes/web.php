@@ -26,3 +26,4 @@ Route::get('/contact/create', [App\Http\Controllers\SaranController::class, 'cre
 Route::post('/contact', [App\Http\Controllers\SaranController::class, 'store']);
 Route::get('/form/create', [App\Http\Controllers\FormRentController::class, 'create']);
 Route::post('/form', [App\Http\Controllers\FormRentController::class, 'store']);
+Route::get('/pembayaran', [App\Http\Controllers\HomeController::class, 'bayar']);
